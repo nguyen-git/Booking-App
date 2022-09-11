@@ -1,0 +1,91 @@
+.hotelsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .hotelsWrapper {
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        gap: 20px;
+        .hotelsSearch {
+            flex: 1;
+            min-width: 375px;
+            height: max-content;
+            background-color: #febb02;
+            padding: 10px;
+            border-radius: 10px;
+            position: sticky;
+            top: 10px;
+            button {
+                padding: 10px;
+                background-color: #003580;
+                color: white;
+                border: none;
+                width: 100%;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            label {
+                margin: 15px 0 5px 0;
+            }
+            .hotelsTitle {
+                font-style: 20px;
+                color: #555;
+                margin-bottom: 10px;
+            }
+            .hotelsItem {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 10px;
+                position: relative;
+                input {
+                    height: 30px;
+                    border: none;
+                    padding: 5px;
+                }
+                span {
+                    height: 30px;
+                    background-color: white;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+                }
+                .hotelsOptionsItem {
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    color: #555;
+                    font-style: 12px;
+                    .hotelsItemInput {
+                        width: 40px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+                .hotelsDateRange {
+                    // position: absolute;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .hotelsResult {
+            flex: 3;
+        }
+    }
+}
+
+.dateSearch {
+    position: absolute;
+    top: 425px;
+    left: 258px;
+    width: 375px;
+}
